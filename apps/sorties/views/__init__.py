@@ -180,6 +180,7 @@ class PaiementSalaireViewSet(viewsets.ModelViewSet):
                     'salaire_brut': p.get('salaire_brut', 0),
                     'retenue_cnps': p.get('retenue_cnps', 0),
                     'retenue_impots': p.get('retenue_impots', 0),
+                    'deduction_ecart_caisse': p.get('deduction_ecart_caisse', 0),
                 }
             )
             created.append(sal)
