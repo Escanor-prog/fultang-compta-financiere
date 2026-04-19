@@ -1,4 +1,9 @@
-# Caisse models — Charles-Henry ajoutera ses modèles ici
-# Dépendances disponibles :
-#   - from apps.comptabilite.models import CompteComptable
-#   - from apps.sorties.models import CategorieSortie
+from .quittance import Quittance
+from .paiements import Cheque, PaiementMobile, PaiementCarte, VirementBancaire
+from .caisse_journaliere import CaisseJournaliere, DepenseMenue, InventaireCaisse
+
+__all__ = [
+    'Quittance',
+    'Cheque', 'PaiementMobile', 'PaiementCarte', 'VirementBancaire',
+    'CaisseJournaliere', 'DepenseMenue', 'InventaireCaisse',
+]
